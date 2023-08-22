@@ -170,9 +170,10 @@ head();
                                 <div id="tableExample"
                                     data-list='{"valueNames":["s.No","User Id","Name","Check In","Check Out","Status","Action"],"page":10,"pagination":true}'>
                                     <div class="table-responsive">
-                                   <table class="table table-sm border-top border-200 fs--1 mb-0" class="table table-striped">
-                                    
-            
+                                        <table class="table table-sm border-top border-200 fs--1 mb-0"
+                                            class="table table-striped">
+
+
                                             <thead>
                                                 <tr>
                                                     <th class="white-space-nowrap fs--1 align-middle ps-0"

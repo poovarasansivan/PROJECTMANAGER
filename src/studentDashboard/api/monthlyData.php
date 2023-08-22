@@ -5,7 +5,7 @@ $db = db();
 if (isset($_POST['userId'])) {
     $selectedUserId = $_POST['userId'];
 } else {
-    $selectedUserId = ''; 
+    $selectedUserId = '';
 }
 
 $sql = "SELECT MONTH(check_in) AS MONTH, SUM(duration) AS total_duration FROM work_log WHERE user_id = '$selectedUserId' GROUP BY MONTH(check_in)";

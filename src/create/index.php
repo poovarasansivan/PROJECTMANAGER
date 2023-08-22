@@ -32,7 +32,7 @@ head(); ?>
 
                 <div id="alert-container" class="animated-alert"></div>
 
-              <div class="form-floating"><input class="form-control" id="projectTitle" type="text"
+                <div class="form-floating"><input class="form-control" id="projectTitle" type="text"
                     placeholder="Project title" /><label for="projectTitle">Project title</label></div>
               </div>
               <div class="col-12 gy-6">
@@ -83,7 +83,8 @@ head(); ?>
 
               <div class="col-12 gy-6">
                 <div class="row g-3 justify-content-end">
-                  <div class="col-auto"><button class="btn btn-phoenix-primary px-5" onclick="cancel()">Cancel</button></div>
+                  <div class="col-auto"><button class="btn btn-phoenix-primary px-5" onclick="cancel()">Cancel</button>
+                  </div>
                   <div class="col-auto"><button onclick="createProject()" id="create"
                       class="btn btn-primary px-5 px-sm-15">Create
                       Project</button></div>
@@ -100,7 +101,7 @@ head(); ?>
 
   </body>
   <script>
-    function cancel(){
+    function cancel() {
       window.location.replace("../../src/ourproject/index.php");
     }
     getdata()

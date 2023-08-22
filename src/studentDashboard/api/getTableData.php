@@ -1,7 +1,7 @@
 <?php
 
-include '../../../includes/init.php'; 
-$db = db(); 
+include '../../../includes/init.php';
+$db = db();
 if (isset($_POST['userId'])) {
     $selectedUserId = $_POST['userId'];
 

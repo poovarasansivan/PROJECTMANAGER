@@ -2,11 +2,10 @@
 include '../../../includes/init.php';
 $path = $GLOBALS['_path'];
 $db = db();
-if(isset($_POST['userId'])){
-    $selectedUserId=$_POST['userId'];
-}
-else{
-    $selectedUserId="";
+if (isset($_POST['userId'])) {
+    $selectedUserId = $_POST['userId'];
+} else {
+    $selectedUserId = "";
 }
 $sql = "SELECT DATE(check_in) AS DATE, SUM(duration) AS total_duration FROM work_log WHERE user_id='$selectedUserId' GROUP BY DATE(check_in)";
 $result = mysqli_query($db, $sql);

@@ -172,7 +172,7 @@ head(); ?>
                                 echo "
                          <button class='btn btn-phoenix-success btn-sm' type='button' onclick='activeStatus($row[id],0)'
                              id='nonActive'>Non Active</button>";
-                             echo"
+                              echo "
                              </tr>";
                             } ?>
 

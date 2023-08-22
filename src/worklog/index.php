@@ -35,15 +35,15 @@ head(); ?>
             <div class="p-4 code-to-copy">
               <div id="tableExample3"
                 data-list='{"valueNames":["id","userid","name","checkin","checkout","status"],"page":10,"pagination":true}'>
-                
+
                 <div class="d-flex align-items-center justify-content-end">
-                <div class="search-box mb-3 mx-auto">
-                  <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
-                    <input class="form-control search-input search form-control-sm" type="search" placeholder="Search"
-                      aria-label="Search" />
-                    <span class="fas fa-search search-box-icon"></span>
-                  </form>
-                </div>
+                  <div class="search-box mb-3 mx-auto">
+                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                      <input class="form-control search-input search form-control-sm" type="search" placeholder="Search"
+                        aria-label="Search" />
+                      <span class="fas fa-search search-box-icon"></span>
+                    </form>
+                  </div>
                   <div class="card shadow-none border border-300 my-1" data-component-card="data-component-card">
                     <div class="card-body p-1">
                       <div><button class="btn btn-phoenix-success btn-sm" type="button" onclick="checkIn()"
@@ -400,7 +400,4 @@ head(); ?>
   })();
 
 </script>
-
-
-
 </html>

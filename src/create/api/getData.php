@@ -11,11 +11,11 @@ $checkResult = mysqli_query($db, $checkSql);
 
 if ($checkResult) {
     if ($checkResult->num_rows > 0) {
-        while($row = $checkResult->fetch_assoc()){
+        while ($row = $checkResult->fetch_assoc()) {
             $data[] = $row;
         }
         $res['success'] = true;
-        $res['data']= $data; 
+        $res['data'] = $data;
     } else {
         $res['success'] = false;
         $res['message'] = "Record not found";

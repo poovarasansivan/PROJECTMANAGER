@@ -8,7 +8,7 @@ extract($_POST);
 $stmt = $db->prepare("SELECT DATE(check_in) AS DATE, SUM(duration) AS total_duration FROM work_log WHERE project_id = ? GROUP BY DATE(check_in)");
 $stmt->bind_param('i', $id);
 $stmt->execute();
-$result = $stmt->get_result(); 
+$result = $stmt->get_result();
 
 $dailyDuration = array();
 
