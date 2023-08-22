@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Map</title>
+</head>
+
+<body>
+    <div>
+        <iframe id="map-frame" width="600" height="450" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.8114635053555!2d77.27644819445615!3d11.495003112747593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d7b4b9f8b%3A0xb6fdc9474cdf5cf7!2sBannari%20Amman%20Institute%20Learning%20Center!5e0!3m2!1sen!2sin!4v1692323129113!5m2!1sen!2sin"
+            allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // Example dynamic latitude and longitude values
+        var latitude = 11.;
+        var longitude = 77.2789517;
+
+        // Construct the dynamic URL with latitude and longitude
+        var dynamicUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.8114635053555!2d" +
+            longitude + "!3d" + latitude + "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d7b4b9f8b%3A0xb6fdc9474cdf5cf7!2sBannari%20Amman%20Institute%20Learning%20Center!5e0!3m2!1sen!2sin!4v1692323129113!5m2!1sen!2sin";
+
+        // Set the dynamic URL to the iframe
+        var mapFrame = document.getElementById("map-frame");
+        mapFrame.src = dynamicUrl;
+    </script>
+</body>
+
+</html>
