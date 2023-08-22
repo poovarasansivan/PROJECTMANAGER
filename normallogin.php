@@ -113,5 +113,4 @@ $path = $GLOBALS['_path'];
       });
    }
 </script>
-
 </html>
