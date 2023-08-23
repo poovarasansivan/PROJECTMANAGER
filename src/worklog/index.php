@@ -10,16 +10,12 @@ $userData = $_SESSION['userData'];
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <?php
 head(); ?>
-
 <body>
   <main class="main" id="top">
     <?php menu() ?>
-
     <div class="content">
-
       <div style="margin-top: -20px;" class="col-12 col-xl-12 order-1 order-xl-0">
         <div class="mb-9">
           <div class="card shadow-none border border-300 my-4" data-component-card="data-component-card">
@@ -30,8 +26,6 @@ head(); ?>
                 </div>
               </div>
             </div>
-
-
             <div class="p-4 code-to-copy">
               <div id="tableExample3"
                 data-list='{"valueNames":["id","userid","name","checkin","checkout","status"],"page":10,"pagination":true}'>
@@ -48,13 +42,12 @@ head(); ?>
                     <div class="card-body p-1">
                       <div><button class="btn btn-phoenix-success btn-sm" type="button" onclick="checkIn()"
                           id="checkIn">Check IN</button>
+                          
                         <a href="api/download.php"><button class="btn btn-phoenix-success btn-sm" type="button"
                             id="download" style="border-200">Download</button></a>
                       </div>
                     </div>
                   </div>
-
-
                 </div>
                 <div id="tableExample">
                   <div class="table-responsive mx-n1 px-1">
@@ -83,7 +76,6 @@ head(); ?>
                         $i = 0;
                         while ($row = $checkResult->fetch_assoc()) {
                           $i++;
-                          // echo json_encode($row);
                           echo " <tr>
                              <td class='fs--1 align-middle'>
                                  <div class='form-check mb-0 fs-0'><input class='form-check-input' type='checkbox'
@@ -185,7 +177,6 @@ head(); ?>
                     <div id="map"></div>
                   </div>
                 </div>
-
                 <div class="p-2 flex-fill bg-200 border border-400">
                   <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                     <div id="maps"></div>
@@ -209,7 +200,6 @@ head(); ?>
                         <h4 class="me-3" style="font-size:15px">Description</h4><button
                           class="btn btn-link p-0"></button>
                       </div>
-
                       <p class="text-1000" id="viewDescription"></p>
                       <h1 class="me-3" style="font-size:15px;margin-bottom:10px">Check IN Time:</h1>
                       <p id="checkin"></p>
@@ -223,7 +213,6 @@ head(); ?>
                         onclick="approve('2')" id="reject" data-bs-dismiss="modal">Reject</button></div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -377,9 +366,6 @@ head(); ?>
       });
     });
   });
-
-
-
 </script>
 
 <script>
